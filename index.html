@@ -7,30 +7,23 @@
     <title>Portal de noticias intergalactico</title>
     <link rel="stylesheet" href="./styles/card.css">
     <script src="./src/components/cardNews.js" defer></script>
+    <script src="./src/components/tituloDinamico.js" defer></script>
 </head>
 <body>
-    
-    <div class="container">
 
-        <div class="card">
+    <div class="app-root">
 
-            <div class="card__left">
-                <span>By Rafael Cardoso</span>
-                <h1>Darth Vader Contrata Devs</h1>
-                <p>Darth Vader procura desenvolvedores que saibam trabalhar com componentes</p>
-            </div>
-            <div class="card__right">
-                
-                <img src="./assets/news-img.png" alt="Darth Vader">
-                
-                
-            </div>
-            
-        </div>
+        <card-news
+            tittle="Darth Vader Contrata Devs"
+            content="Darth Vader procura desenvolvedores que saibam trabalhar com componentes"
+            link-url="google.com"
+            photo="assets\news-img.png"
+            anchor="lalalal"
+        >
+        </card-news>
+        
+        <titulo-dinamico titulo="sexo"></titulo-dinamico>
 
     </div>
-
-    <card-news></card-news>
-
 </body>
 </html>
